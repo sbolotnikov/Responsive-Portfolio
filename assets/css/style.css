@@ -7,10 +7,9 @@
 }
 .navbar-brand{
   display: inline-block;
-  float: left;
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
-  /* justify-content: stretch; */
+  justify-content: flex-start;
 
 }
 .navbar-nav{
@@ -35,6 +34,10 @@
   margin-left:20px;
   
 }
+.btn{
+  background-color: #59aaa5;
+  border: 1px solid #59aaa5;
+}
 .page-header{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
@@ -55,25 +58,3 @@
   min-width: 480px;
   width: 100%;
 }
-/*
-#mainNav {
-    max-height: 60px;
-    background-color: white;
-    color: rgb(185, 24, 49);
-    font-size: 1.5rem;
-    font-weight: 00;
-    flex-direction: column;
-  
-  }
-
-  #navbar-brand {
-    color: #161616;
-    font-weight: 700;
-    padding: .9rem 0.2rem;
-    justify-content: stretch;
-
-  }
-
-  #navbarSupportedContent{
-    flex-direction: row;
-  }*/

@@ -58,3 +58,10 @@
   min-width: 480px;
   width: 100%;
 }
+.footerClass{
+  text-align: center;
+  padding: 25px;
+  background-color: #666666;
+  color:darkgrey;
+
+}

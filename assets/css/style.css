@@ -1,10 +1,21 @@
 /* ---- NAV ----*/
+.navbar{
+  background-color: #59aaa5;
+  padding: 0px;
+  /* display:inline-block; */
+  align-self: flex-start;
+}
 .navbar-brand{
   display: inline-block;
+  float: left;
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
   /* justify-content: stretch; */
 
+}
+.navbar-nav{
+  display: inline-flex;
+  float: right;
 }
 .navbar-nav .nav-link{
   color: darkgray;
@@ -29,7 +40,20 @@
   font-weight: 900;
   color: #59aaa5;
   padding-left: 15px;
+  border-bottom: 3px solid lightgrey;
+  margin-bottom: 20px;
   
+}
+.card{
+  width:95%;
+  align-items: center;
+  background-color:#59aaa5; 
+  margin-bottom: 20px; 
+  display: inline-block;
+}
+.card.card-img{
+  min-width: 480px;
+  width: 100%;
 }
 /*
 #mainNav {

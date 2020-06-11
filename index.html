@@ -7,7 +7,7 @@
     devices. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Responsive Portfolio</title>
     <!-- We need to bring in the bootstrap CSS -->
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -27,48 +27,29 @@
     <link rel="stylesheet" href=" assets/css/style.css " />
 </head>
 
-<!-- Navigation -->
-<header class="container padding:0px">
-    <!--Important to change padding to 0px so navbar fits exactly-->
-    <nav class="navbar navbar-expand-md align-items-flex-start">
-        <!--Important to change padding to 0px so navbar fits exactly-->
-        <div class="container" style="justify-content: center; padding: 5px; margin: 0px;">
-            <!-- Move brand's container to left and keep brand's label in the middle of container.
-                 Need to find out why left border keep moving?-->
-            <a class="navbar-brand text-white" style="padding: 5px;">Sergey Bolotnikov</a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-expand-sm">
+        <div class="navbar-brand">
+            <h2> Sergey Bolotnikov</h2>
         </div>
-        <div class="container" style="padding-left: 20%; width: 100%; background-color: white ">
-            <!-- keep navbar to the left by adding padding-left 20% -->
-            <div class="navbar-expand-sm" style="padding: 10px; background-color: white; align-items:flex-start;">
-                <!-- navbar expands if screen width more then 567px -->
-                <ul class="navbar-nav">
-                    <li class="nav-item col-md-4 ">
-                        <!-- make all columns even -->
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item col-md-4 ">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item col-md-4">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <ul>
+            <li><button class="button1">z</button></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a>
+            </li>
+        </ul>
     </nav>
-</header>
-<!-- About me-->
+    <!-- About me-->
+    <main>
+        <Header>
+            <h2>About Me</h2>
+        </Header>
+        <figure class="sec1">
+            <img src="assets/images/serega.jpg " alt="Sergey's Photo"
+                style="float:left; max-width:480px; min-width: 325px; margin-bottom: 10px; margin-right: 10px;" />
 
-<section class="content">
-    <div class="container align-items-flex-start padding-left:10px" id="ContainerPanel">
-        <div class="page-header">
-            <h3>About Me</h3>
-        </div>
-        <div class="container padding-left:0px">
-            <div class="container">
-                <img src="assets/images/serega.jpg " alt="Sergey's Photo"
-                    style="float:left; max-width:480px; min-width: 325px; margin-bottom: 10px; margin-right: 10px;" />
-            </div>
             He gained his first taste of competitive dancing at the age of 9. Gradually, Sergey developed his skills
             and understanding of dance and achieved success in his hometown of Chelyabinsk, Ural region, and Russia.
             After his coaches Oleg and Irina Trebunski had left Russia, he managed the DanceFeel Club, where he
@@ -77,7 +58,7 @@
             course, his dancing career continued to blossom at the same time. Competitively, Sergey represented the
             Chelyabinsk region in both 10-Dance and Standard in National and International Championships. He
             represented Russia in US Open in 1997.
-
+            <br></br>
             In 1998, Sergey moved to New York. For the next 5 years he continued to master his dancing and teaching
             skills at Fred Astaire Dance Studios. He represented FADS Midtown numerous times in professional events
             in both American and International Styles (Rhythm and Smooth, Latin and Standard) throughout United
@@ -85,7 +66,7 @@
             and American Rhythm. His efforts were recognized by the New York Franchise for "Outstanding Performance
             in Advanced Department” in 1999 and as “Best Advanced Department Teacher" in 2000. Twice, in 1999 and
             2000, he received the Top Teacher Award in Fred Astaire Competitions.
-
+            <br></br>
             Sergey started his independent dance business in 2003. In the meantime, he continued his training with
             top world class professionals – Jonathan Wilkins & Katusha Demidova, Giampierro Giannico & Ieva
             Pauksena, Greg Smith, Michael & Vicky Barr, Kenny & Marion Welsh, Robert & Barbara Grover, Igor Suvorov,
@@ -93,18 +74,11 @@
             the list goes on and on. Sergey successfully competed professionally in the International Standard
             division in the USA and abroad. He became a finalist in the Rising Star and Open Standard divisions in a
             number of local, regional, and national DanceSport competitions.
-
-        </div>
-    </div>
-</section>
-
-<footer class="footerClass">
-    &copy, Sergey
-</footer>
-
-
-
-
-
+        </figure>
+    </main>
+    <footer class="footerClass">
+        &copy, Sergey Bolotnikov
+    </footer>
+</body>
 
 </html>

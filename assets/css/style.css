@@ -1,52 +1,109 @@
-/* ---- NAV ----*/
-.navbar{
-  background-color: #59aaa5;
-  padding: 0px;
-  /* display:inline-block; */
-  align-self: flex-start;
-  max-width: 800px;
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(231, 230, 230);
 }
-.navbar-brand{
-  display: inline-block;
-  font-weight: 900;
-  font-family: 'Times New Roman', Times, serif;
-  justify-content: flex-start;
-
-}
-.navbar-nav{
-  display: inline-flex;
-  float: right;
-}
-.navbar-nav .nav-link{
-  color: darkgray;
-  background-color: transparent;
-}
-
-.content{
-  background-color: rgb(240, 238, 238);
-  border-bottom: 2mm solid #59aaa5;
-  border-top: 1px solid lightgrey;
-  padding-top: 20px;
-  padding-bottom: 20%;
-}
-#ContainerPanel{  
+/* Navigation */
+nav
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  padding: 0px 20px;
   background-color: white;
-  border: 1px solid lightgray;
-  margin-left:20px;
-  max-width: 800px;
 }
-.btn{
+.navbar-brand
+{
+  color:white;
+  padding: 7px;
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-color:#59aaa5;
+  width:100%;
+
+  }
+
+nav ul
+{
+  margin: 0;
+  padding-left: 0;
+  /* align-content: right; */
+  background-color:white;
+  display: inline-flex;
+  width: 100%;
+}
+nav ul li
+{
+  list-style: none;
+}
+nav ul li a
+{
+  line-height: 50px;
+  color: gray;
+  padding: 0px 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+nav ul li a:active,
+nav ul li a:hover
+{
+  color: beige;
+  background: #59aaa5;
+}
+.button1
+{
+    background-color:white;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    outline-color: white;
+    cursor:not-allowed
+}
+
+main
+{
+  border-bottom: 2mm solid #59aaa5;
+  border-top: 1px solid grey;
+  padding:0px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 900px;
+}
+/* change color scheme for the button from Contact form */
+ .btn{
   background-color: #59aaa5;
   border: 1px solid #59aaa5;
-}
-.page-header{
+} 
+header
+{
   font-family: 'Times New Roman', Times, serif;
+  background-color: white; 
   font-weight: 900;
   color: #59aaa5;
   padding-left: 15px;
-  border-bottom: 3px solid lightgrey;
-  margin-bottom: 20px;
-  
+  border:1px solid lightgray; 
+  border-bottom: 1px solid white;
+  margin: 30px 20px 0px 20px;
+}
+
+.sec1
+{
+  background-color: white; 
+  margin: 0px 20px 40px 20px;
+  padding: 15px;
+  border:1px solid lightgray; 
+  border-top: 3px solid grey;
 }
 .card{
   width:95%;
@@ -56,8 +113,9 @@
   display: inline-block;
 }
 .card.card-img{
-  min-width: 480px;
+  max-width: 380px;
   width: 100%;
+  padding-bottom: 10px;
 }
 .footerClass{
   text-align: center;

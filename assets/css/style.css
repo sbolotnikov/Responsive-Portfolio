@@ -49,8 +49,15 @@ h6.LinkTab
   background-color: white;
   padding-top: 10px;
 }
-.a:active,
-.a:hover
+h4.card-text
+{
+  text-align:center;
+  color: white;
+  background-color: #59aaa5;
+  width:100%;
+}
+.A1:active,
+.A1:hover
 {
   color: beige;
   background: #59aaa5;
@@ -76,6 +83,15 @@ main
   margin: 20px 20px 40px 20px;
   padding: 15px;
   max-width: 717px;
+  border:1px solid lightgray; 
+  align-items: flex-start;
+}
+.sec2
+{
+  background-color: white; 
+  margin: 20px 20px 40px 20px;
+  padding: 15px;
+  max-width: 793px;
   border:1px solid lightgray; 
   align-items: flex-start;
 }

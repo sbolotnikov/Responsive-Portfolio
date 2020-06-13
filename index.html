@@ -39,38 +39,32 @@
             </div>
 
             <div class="col-12 col-sm-12 col-md-7 col-lg-7">
-                <div class="row">
+                <div class="row" id="subRow">
                     <!-- in order to further separate Brand and Navigation bar one "space tab" was created. 
                         Text on it is invisible -->
                     <div class="col-3 col-sm-3 col-md-5 col-lg-6">
                         <h6 id="SpaceTab"> dffgf</h6>
                     </div>
                     <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-                        <a class="A1" href="index.html">
-                            <h6 class="LinkTab"> About </h6>
-                        </a>
+                        <a class="NavA" href="index.html"> <p class="NavP">About</p></a>
                     </div>
                     <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-                        <a class="A1" href="portfolio.html">
-                            <h6 class="LinkTab"> Portfolio </h6>
-                        </a>
+                        <a class="NavA" href="portfolio.html"><p class="NavP">Portfolio</p></a>
                     </div>
                     <div class="col-4 col-sm-4 col-md-2 col-lg-2">
-                        <a class="A1"  href="contact.html">
-                            <h6 class="LinkTab"> Contact </h6>
-                        </a>
+                        <a class="NavA" href="contact.html"><p class="NavP">Contact</p></a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
     <!-- About me-->
-    <main>
-        <figure class="sec1">
+    <main class="container">
+        <section class="sec1">
             <!-- In order to create divider i make container and use bottom border -->
-            <div class="container" id="HeaderContainer">
+            <figure id="HeaderContainer">
                 <h2 class="head1">About Me</h2>;
-            </div>
+            </figure>
             <!-- adjustment of the picture transition from width 100% in low resolution screens to 50% made by 
                 using @media  breakpoints in separate about_style.css -->
             <div class="img-wrapper">
@@ -121,7 +115,7 @@
                 divisions in a
                 number of local, regional, and national DanceSport competitions.
             </p>
-        </figure>
+        </section>
     </main>
     <footer class="footerClass">
         &copy; Sergey Bolotnikov

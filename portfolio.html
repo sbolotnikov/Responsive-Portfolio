@@ -41,26 +41,20 @@
             </div>
 
             <div class="col-12 col-sm-12 col-md-7 col-lg-7">
-                <div class="row">
+                <div class="row" id="subRow">
                     <!-- in order to further separate Brand and Navigation bar one "space tab" was created. 
                         Text on it is invisible -->
                     <div class="col-3 col-sm-3 col-md-5 col-lg-6">
                         <h6 id="SpaceTab"> dffgf</h6>
                     </div>
                     <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-                        <a class="A1" href="index.html">
-                            <h6 class="LinkTab"> About </h6>
-                        </a>
+                        <a class="NavA" href="index.html"> <p class="NavP">About</p></a>
                     </div>
                     <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-                        <a class="A1" href="portfolio.html">
-                            <h6 class="LinkTab"> Portfolio </h6>
-                        </a>
+                        <a class="NavA" href="portfolio.html"><p class="NavP">Portfolio</p></a>
                     </div>
                     <div class="col-4 col-sm-4 col-md-2 col-lg-2">
-                        <a class="A1" href="contact.html">
-                            <h6 class="LinkTab"> Contact </h6>
-                        </a>
+                        <a class="NavA" href="contact.html"><p class="NavP">Contact</p></a>
                     </div>
                 </div>
             </div>
@@ -69,39 +63,38 @@
     <!-- Portfolio
     general layout made by using raw/colums adjustable to diffrent displays. Thumbnails made in the standard 
     card shape with the use of overlay text. Links go directly to real project except for the last one. It links to my favorite game website -->
-    <main>
-        <figure class="sec2">
+    <main class="container">
+        <section class="sec2">
             <!-- In order to create divider i make container and use bottom border -->
-            <div class="container" id="HeaderContainer">
+            <figure  id="HeaderContainer">
                 <h2 class="head1">Portfolio</h2>
-            </div>
+            </figure>
             <div class="row">
                 <div class="col-md-6">
                     <a href="index.html" target="_blank">
-                        <div class="card" style="width: 325px">
+                        <div class="card">
                             <img class="card-img" src="assets/images/serega.jpg" alt="Sergey's Photo">
-                            <div class="card-img-overlay" 
-                            style="display:flex; align-items: flex-end ;">
+                            <div class="card-img-overlay">
                                 <h4 class="card-text">Responsive Portfolio</h4>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a href="https://scratch.mit.edu/projects/397613850/fullscreen/" target="_blank">
-                        <div class="card" style="width: 325px">
+                    <a href="https://scratch.mit.edu/users/boser1112/" target="_blank">
+                        <div class="card">
                             <img class="card-img" src="assets/images/Cat-and-cheese-balls.jpg" alt="Cat and cheese balls Photo">
-                            <div class="card-img-overlay" style="display:flex; align-items: flex-end ;">
+                            <div class="card-img-overlay">
                                 <h4 class="card-text">Cat and Cheese Balls game </h4>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a href="https://scratch.mit.edu/projects/397613850/fullscreen/" target="_blank">
-                        <div class="card" style="width: 325px">
+                    <a href="https://scratch.mit.edu/users/boser1112/" target="_blank">
+                        <div class="card">
                             <img class="card-img" src="assets/images/the-Game-of-Cat-and-Mouse.jpg" alt="the Game of Cat and Mouse Photo">
-                            <div class="card-img-overlay" style="display:flex; align-items: flex-end ;">
+                            <div class="card-img-overlay">
                                 <h4 class="card-text">the Game of Cat and Mouse</h4>
                             </div>
                         </div>
@@ -109,9 +102,9 @@
                 </div>
                 <div class="col-md-6">
                     <a href="https://sbolotnikov.github.io/Code-Refactor-Project/index.html" target="_blank">
-                        <div class="card" style="width: 325px">
+                        <div class="card">
                             <img class="card-img" src="assets/images/Code-refactor.jpg" alt="Code refactor project Photo">
-                            <div class="card-img-overlay" style="display:flex; align-items: flex-end ;">
+                            <div class="card-img-overlay">
                                 <h4 class="card-text">Code Refactor Project</h4>
                             </div>
                         </div>
@@ -119,16 +112,16 @@
                 </div>
                 <div class="col-md-6">
                     <a href="https://civilization.com/civilization-4/" target="_blank">
-                        <div class="card" style="width: 325px">
+                        <div class="card">
                             <img class="card-img" src="assets/images/sid-meiers-civilization4.jpg" alt="Sid Meiers Civilization4 Photo">
-                            <div class="card-img-overlay" style="display:flex; align-items: flex-end ;">
+                            <div class="card-img-overlay">
                                 <h4 class="card-text">Civilization 4 Game</h4>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
-        </figure>
+        </section>
     </main>
     <footer class="footerClass">
         &copy; Sergey Bolotnikov

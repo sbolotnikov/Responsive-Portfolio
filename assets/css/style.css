@@ -1,3 +1,30 @@
+#HeaderContainer
+{
+  width: 100%;
+  border-bottom: 2px solid grey ;
+  margin-bottom: 15px;
+}
+#Row1
+{
+  background-color: white;
+  vertical-align: middle;
+}
+#Brand
+{
+  color:white;
+  /* font-size: 27px; */
+  font-stretch: wider;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Times New Roman', Times, serif;
+  background-color:#59aaa5;
+  width:100%;
+ 
+}
+#SpaceTab
+{
+  color: white;
+}
 body
 {
   margin: 0;
@@ -8,68 +35,26 @@ body
 /* Navigation */
 nav
 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   top: 0;
   left: 0;
   width: 100%;
-  height: 110px;
-  padding: 0px 20px;
+  height: 120px;
+  padding: 0px 0px;
   background-color: white;
 }
-.navbar-brand
+h6.LinkTab
 {
-  color:white;
-  padding: 7px;
-  font-size: 27px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  background-color:#59aaa5;
-  width:100%;
-
-  }
-
-nav ul
-{
-  margin: 0;
-  padding-left: 0;
-  /* align-content: right; */
-  background-color:white;
-  display: inline-flex;
-  width: 100%;
-}
-nav ul li
-{
-  list-style: none;
-}
-nav ul li a
-{
-  line-height: 50px;
   color: gray;
-  padding: 0px 20px;
   font-family: sans-serif;
-  text-decoration: none;
+  background-color: white;
+  padding-top: 10px;
 }
-nav ul li a:active,
-nav ul li a:hover
+.a:active,
+.a:hover
 {
   color: beige;
   background: #59aaa5;
 }
-.button1
-{
-    background-color:white;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    outline-color: white;
-    cursor:not-allowed
-}
-
 main
 {
   border-bottom: 2mm solid #59aaa5;
@@ -78,32 +63,28 @@ main
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 100%;
 }
 /* change color scheme for the button from Contact form */
  .btn{
   background-color: #59aaa5;
   border: 1px solid #59aaa5;
 } 
-header
-{
-  font-family: 'Times New Roman', Times, serif;
-  background-color: white; 
-  font-weight: 900;
-  color: #59aaa5;
-  padding-left: 15px;
-  border:1px solid lightgray; 
-  border-bottom: 1px solid white;
-  margin: 30px 20px 0px 20px;
-}
-
 .sec1
 {
   background-color: white; 
-  margin: 0px 20px 40px 20px;
+  margin: 20px 20px 40px 20px;
   padding: 15px;
+  max-width: 717px;
   border:1px solid lightgray; 
-  border-top: 3px solid grey;
+  align-items: flex-start;
+}
+.head1
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  color: #59aaa5;
+  /* margin: 10px 10px 10px 0px; */
 }
 .card{
   width:95%;

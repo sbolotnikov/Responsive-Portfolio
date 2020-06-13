@@ -26,54 +26,78 @@
     <!-- my css style sheet -->
     <link rel="stylesheet" href=" assets/css/style.css " />
 </head>
-<!-- Navigation -->
-<nav class="navbar-expand-sm">
-    <div class="navbar-brand">
-        <h2> Sergey Bolotnikov</h2>
-    </div>
-    <ul>
-        <li><button class="button1">z</button></li>
-        <li><a href="index.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a>
-        </li>
-    </ul>
-</nav>
-<!-- Cntact form-->
 
-<main>
-    <header>
-        <h2>Contact</h2>
-    </header>
-    <figure class="sec1">
+<body>
+    <!-- Navigation
+    created by using sub raws adjusting to diffrent size of screen by using sub-columns 
+    according the pictures given -->
+    <nav>
+        <div class="row" id="Row1">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5" id="Brand">
+                <h2> Sergey Bolotnikov</h2>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                <div class="row">
+                    <!-- in order to further separate Brand and Navigation bar one "space tab" was created. 
+                        Text on it is invisible -->
+                    <div class="col-3 col-sm-3 col-md-5 col-lg-6">
+                        <h6 id="SpaceTab"> dffgf</h6>
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                        <a href="index.html">
+                            <h6 class="LinkTab"> About </h6>
+                        </a>
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                        <a href="portfolio.html">
+                            <h6 class="LinkTab"> Portfolio </h6>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                        <a href="contact.html">
+                            <h6 class="LinkTab"> Contact </h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Contact form used standart Form adjusted to make it look like in the task given. 
+        I like small comments under each input box if you want to keep it, just uncomment it below-->
+
+    <main>
+        <figure class="sec1">
+             <!-- In order to create divider i make container and use bottom border -->
+            <div class="container" id="HeaderContainer">
+                <h2 class="head1">Contact</h2>
+            </div>
             <form>
                 <div class="form-group">
-                  <label for="exampleInputName">Name</label>
-                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="textHelp" placeholder="John Smith">
-                  <small id="textHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+                    <label for="exampleInputName">Name</label>
+                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="textHelp"
+                        placeholder="John Smith">
+                    <!-- <small id="textHelp" class="form-text text-muted">We'll never share your information with anyone else.</small> -->
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="example@gmail.com">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
                 <div class="form-group">
-                  <label for="exampleTextMessage">Message</label>
-                  <textarea class="form-control" id="exampleTextMessage" rows="5"></textarea>
+                    <label for="exampleTextMessage">Message</label>
+                    <textarea class="form-control" id="exampleTextMessage" rows="5"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mb-3">Submit</button>
-              </form>
-        </div>
-    </figure>
-</main>
+            </form>
+            </div>
+        </figure>
+    </main>
 
-<footer class="footerClass" >
-    &copy Sergey Bolotnikov
-</footer>
-
-
-
-
-
+    <footer class="footerClass">
+        &copy Sergey Bolotnikov
+    </footer>
+</body>
 
 </html>

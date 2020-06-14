@@ -54,6 +54,11 @@ First, you will use the Bootstrap CSS Framework to create a mobile responsive po
 
 * Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
 
+original images are in the folder:
+https://github.com/sbolotnikov/Responsive-Portfolio/tree/master/assets/images/originals
+
+final website link :
+https://sbolotnikov.github.io/Responsive-Portfolio/
 
 
 

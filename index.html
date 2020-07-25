@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="UTF-8">
     <!-- We need the following responsive meta tag to ensure things scale correctly across varying
@@ -12,7 +14,8 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -25,109 +28,560 @@
         crossorigin="anonymous"></script>
     <!-- my css style sheet -->
     <link rel="stylesheet" href=" assets/css/style.css " />
-    <link rel="stylesheet" href=" assets/css/about_style.css" />
+    <link rel="stylesheet" href=" assets/css/about_style.css " />
+    <script src="assets/js/main.js" defer></script>;
+
 </head>
 
-<body>
-    <!-- Navigation
-    created by using sub raws adjusting to diffrent size of screen by using sub-columns 
-    according the pictures given -->
-        <nav>
-            <div class="row" id="Row1">
-                <div class="col-12 col-sm-12 col-md-5 col-lg-5" id="Brand">
-                    <h2> Sergey Bolotnikov</h2>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-7 col-lg-7">
-                    <div class="row" id="subRow">
-                        <!-- in order to further separate Brand and Navigation bar one "space tab" was created. 
-                        Text on it is invisible -->
-                        <div class="col-3 col-sm-3 col-md-5 col-lg-6">
-                            <h6 id="SpaceTab"> dffgf</h6>
-                        </div>
-                        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-                            <a class="NavA" href="index.html">
-                                <p class="NavP">About</p>
-                            </a>
-                        </div>
-                        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-                            <a class="NavA" href="portfolio.html">
-                                <p class="NavP">Portfolio</p>
-                            </a>
-                        </div>
-                        <div class="col-4 col-sm-4 col-md-2 col-lg-2">
-                            <a class="NavA" href="contact.html">
-                                <p class="NavP">Contact</p>
-                            </a>
+<body id="greetingTab">
+    <div class="container" style="max-width: 900px; overflow: hidden;">
+        <div class="fixed-top" style="max-width: 900px;">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="row" id="Row1">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5" id="Brand">
+                        <a title="about" href="#" class="active"><span>Home</span></a>
+                    </div>
+        
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                        <div class="row" id="subRow">
+                            <!-- in order to further separate Brand and Navigation bar one "space tab" was created. 
+                                Text on it is invisible -->
+                            <div class="col-0 col-sm-0 col-md-3 col-lg-5">
+                                <h6 id="SpaceTab"> dffgf</h6>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                <a title="web portfolio" href="#projects" class="NavA"><span class="NavP">portfolio</span></a>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                <a title="contact" href="contact.html" class="NavA"><span class="NavP">contact</span></a>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-3 col-lg-3">
+                                <a title="resume" data-toggle="modal" data-target="#modal1"
+                                class="NavA"><span class="NavP">Resume</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+               
             </div>
-        </nav>
-    <!-- About me-->
-    <main class="container">
-        <section class="sec1">
-            <!-- In order to create divider i make container and use bottom border -->
-            <figure id="HeaderContainer">
-                <h2 class="head1">About Me</h2>;
-            </figure>
-            <!-- adjustment of the picture transition from width 100% in low resolution screens to 50% made by 
-                using @media  breakpoints in separate about_style.css -->
-            <div class="img-wrapper">
-                <img class="img-fluid" src="assets/images/serega.jpg" alt="Sergey's Photo">;
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler" id="btnMenu" type="button" style="background-color:#59aaa5 ;"
+                    data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+        <main>
+            <div class="card" id="cardGreeting" style=" align-items: center;">
+                <img class="card-img" id="cardImage1" src="./assets/images/SergeyProfile.png"
+                    alt="Sergey's Profile Picture" width="100%">
+                <div class="card-img-overlay">
+                    <figure id="cloud">
+                        <p id="anim"><span class="n">H</span><span class="n">e</span><span class="n">l</span><span
+                                class="n">l</span><span class="n">o</span><span class="n">,</span><span class="n">
+                            </span><span class="n">m</span><span class="n">y</span><span class="n"> </span><span
+                                class="n">n</span><span class="n">a</span><span class="n">m</span><span
+                                class="n">e</span><span class="n"> </span><span class="n">i</span><span
+                                class="n">s</span><span class="n"> </span></span><strong><span class="n">S</span><span
+                                    class="n">e</span><span class="n">r</span><span class="n">g</span><span
+                                    class="n">e</span><span class="n">y</span><span class="n">
+                                </span><span class="n">B</span><span class="n">o</span><span class="n">l</span><span
+                                    class="n">o</span><span class="n">t</span><span class="n">n</span><span
+                                    class="n">i</span><span class="n">k</span><span class="n">o</span><span
+                                    class="n">v</span></strong><span><span class="n">.</span><span class="n"><br></span>
+                                <span class="n">I</span><span class="n"> </span><span class="n">a</span><span
+                                    class="n">m</span><span class="n"> </span><span class="n">a</span><span class="n">
+                                </span><span class="n">f</span><span class="n">u</span><span class="n">l</span><span
+                                    class="n">l</span><span class="n">-</span><span class="n">s</span><span
+                                    class="n">t</span><span class="n">a</span><span class="n">c</span><span
+                                    class="n">k</span><span class="n"> </span><span class="n">w</span><span
+                                    class="n">e</span><span class="n">b</span><span class="n"> </span><span
+                                    class="n">d</span><span class="n">e</span><span class="n">v</span><span
+                                    class="n">e</span><span class="n">l</span><span class="n">o</span><span
+                                    class="n">p</span><span class="n">e</span><span class="n">r</span><span class="n">
+                                </span><span class="n">a</span><span class="n">n</span><span class="n">d</span><span
+                                    class="n">
+                                </span><span class="n">j</span><span class="n">a</span><span class="n">v</span><span
+                                    class="n">a</span><span class="n">s</span><span class="n">c</span><span
+                                    class="n">r</span><span class="n">i</span><span class="n">p</span><span
+                                    class="n">t</span><span class="n"> </span><span class="n">s</span><span
+                                    class="n">p</span><span class="n">e</span><span class="n">c</span><span
+                                    class="n">i</span><span class="n">a</span><span class="n">l</span><span
+                                    class="n">i</span><span class="n">s</span><span class="n">t</span><span
+                                    class="n">.</span><span class="n"><br></span>
+                                <span class="n">F</span><span class="n">e</span><span class="n">e</span><span
+                                    class="n">l</span><span class="n"> </span><span class="n">f</span><span
+                                    class="n">r</span><span class="n">e</span><span class="n">e</span><span class="n">
+                                </span><span class="n">t</span><span class="n">o</span><span class="n"> </span><span
+                                    class="n">t</span><span class="n">a</span><span class="n">k</span><span
+                                    class="n">e</span><span class="n"> </span><span class="n">a</span><span class="n">
+                                </span><span class="n">l</span><span class="n">o</span><span class="n">o</span><span
+                                    class="n">k</span><span class="n"> </span><span class="n">a</span><span
+                                    class="n">t</span><span class="n"> </span><span class="n">m</span><span
+                                    class="n">y</span><span class="n"> </span><span class="n">l</span><span
+                                    class="n">a</span><span class="n">t</span><span class="n">e</span><span
+                                    class="n">s</span><span class="n">t</span><span class="n"> </span><span
+                                    class="n">p</span><span class="n">r</span><span class="n">o</span><span
+                                    class="n">j</span><span class="n">e</span><span class="n">c</span><span
+                                    class="n">t</span><span class="n">s</span><span class="n"> </span><span
+                                    class="n">o</span><span class="n">n</span><span class="n"> </span><span
+                                    class="n">t</span><span class="n">h</span><span class="n">e</span><span class="n">
+                                </span>
+                                <a itemprop="significantLink" href="portfolio.html" title="web portfolio"><span
+                                        class="n">w</span><span class="n">e</span><span class="n">b</span><span
+                                        class="n">
+                                    </span><span class="n">p</span><span class="n">o</span><span class="n">r</span><span
+                                        class="n">t</span><span class="n">f</span><span class="n">o</span><span
+                                        class="n">l</span><span class="n">i</span><span class="n">o</span><span
+                                        class="n">
+                                    </span><span class="n">p</span><span class="n">a</span><span class="n">g</span><span
+                                        class="n">e</span></a><span><span class="n">.</span></span><span
+                                    class="n"><br></span>
+                                <span class="n">T</span><span class="n">e</span><span class="n">l</span><span
+                                    class="n">.</span><span class="n">:</span><span class="n">(</span><span
+                                    class="n">9</span><span class="n">1</span><span class="n">7</span><span
+                                    class="n">)</span><span class="n">9</span><span class="n">1</span><span
+                                    class="n">6</span><span class="n">-</span><span class="n">2</span><span
+                                    class="n">8</span><span class="n">4</span><span class="n">0</span><span
+                                    class="n"><br></span><span class="n">E</span><span class="n">-</span><span
+                                    class="n">M</span><span class="n">a</span><span class="n">i</span><span
+                                    class="n">l</span><span class="n">:</span><span class="n"></span><a
+                                    title="Contact Email" href="mailto:sbolotnikov@gmail.com"><span
+                                        class="n">s</span><span class="n">b</span><span class="n">o</span><span
+                                        class="n">l</span><span class="n">o</span><span class="n">t</span><span
+                                        class="n">n</span><span class="n">i</span><span class="n">k</span><span
+                                        class="n">o</span><span class="n">v</span><span class="n">@</span><span
+                                        class="n">g</span><span class="n">m</span><span class="n">a</span><span
+                                        class="n">i</span><span class="n">l</span><span class="n">.</span><span
+                                        class="n">c</span><span class="n">o</span><span class="n">m</span><span
+                                        class="n">_</span></a>
+                        </p>
+                    </figure>
+                </div>
             </div>
-            <p>
-                He gained his first taste of competitive dancing at the age of 9. Gradually, Sergey
-                developed his skills
-                and understanding of dance and achieved success in his hometown of Chelyabinsk, Ural region,
-                and Russia.
-                After his coaches Oleg and Irina Trebunski had left Russia, he managed the DanceFeel Club,
-                where he
-                conducted groups and private lessons for all levels and ages. Sergey organized local and
-                regional
-                competitions, choreographed show numbers for both couples and formation teams for special
-                occasions. Of
-                course, his dancing career continued to blossom at the same time. Competitively, Sergey
-                represented the
-                Chelyabinsk region in both 10-Dance and Standard in National and International
-                Championships. He
-                represented Russia in US Open in 1997.
-                <br>
-                In 1998, Sergey moved to New York. For the next 5 years he continued to master his dancing
-                and teaching
-                skills at Fred Astaire Dance Studios. He represented FADS Midtown numerous times in
-                professional events
-                in both American and International Styles (Rhythm and Smooth, Latin and Standard) throughout
-                United
-                States. Sergey holds Full Bronze and Intermediate Silver Fred Astaire Certification in
-                American Ballroom
-                and American Rhythm. His efforts were recognized by the New York Franchise for "Outstanding
-                Performance
-                in Advanced Department” in 1999 and as “Best Advanced Department Teacher" in 2000. Twice, in
-                1999 and
-                2000, he received the Top Teacher Award in Fred Astaire Competitions.
-                <br>
-                Sergey started his independent dance business in 2003. In the meantime, he continued his
-                training with
-                top world class professionals – Jonathan Wilkins & Katusha Demidova, Giampierro Giannico &
-                Ieva
-                Pauksena, Greg Smith, Michael & Vicky Barr, Kenny & Marion Welsh, Robert & Barbara Grover,
-                Igor Suvorov,
-                Brian & Kristi McDonald, Janet Gleave, Sarah Francis, Massimo Giorgianni, Maja Serve & Glenn
-                Weiss, and
-                the list goes on and on. Sergey successfully competed professionally in the International
-                Standard
-                division in the USA and abroad. He became a finalist in the Rising Star and Open Standard
-                divisions in a
-                number of local, regional, and national DanceSport competitions.
-            </p>
-        </section>
-    </main>
-    <div class="fixed-bottom">
-        <footer class="footerClass">
-            &copy; Sergey Bolotnikov
-        </footer>
+            <!-- Projects Section -->
+            <section id="projects" class="sec2">
+                <!-- In order to create divider i make container and use bottom border   -->
+                <figure id="HeaderContainer">
+                    <h2 class="head1" style="margin: 10px 10px 10px 45px;">Portfolio</h2>
+                </figure>
+                <div class="row" style="margin: 10px 10px 10px 30px;">
+                    <div class="col-md-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="./assets/images/Dinner/2-restaurant-search-results.png"
+                                        alt="Restaurant 2-restaurant-search-results">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">restaurant search results</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./assets/images/Dinner/4-dish-search-results.png"
+                                        alt="results of search for specific dish">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">results of search for specific dish</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Dinner/5-details-on-recipe.png"
+                                        alt="detailed look of the recipe">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">detailed look ingridients&how-to recipe</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Dinner/7-responsive-shots-IPad.jpg"
+                                        alt="App on Iphone, IPad">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">App on Iphone, IPad</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://andrewdalba.github.io/what-is-for-dinner/" target="_blank">
+                            <h3 class="head1">APP: What's For Dinner?</h3>
+                        </a>
+                        <a href="https://github.com/andrewdalba/what-is-for-dinner" target="_blank">
+                            <p class="head1">Link to GitHub depository</p>
+                        </a>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="./assets/images/Weather/4-list-of-maps-used-switchto-Celsious.png"
+                                        alt="Maps list from openweathermap API using leaflet switch to Celsious">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">List of maps displayed from openweathermap API using
+                                            leaflet API and openstreetmap tiles and switching to Celsious</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./assets/images/Weather/5-diffrent-city-click.png"
+                                        alt="Diffrent city and background">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">You can choose diffrent city also it change
+                                            background from rapidapi API</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="./assets/images/Weather/6-temperature-layer-map&forecast.png"
+                                        alt="detailed look of the recipe">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">detailed look ingridients&how-to recipe</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Weather/8-iPAD-look.png"
+                                        alt="App on Iphone, IPad">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">App on Iphone, IPad</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://sbolotnikov.github.io/weather-dashboard/" target="_blank">
+                            <h3 class="head1">Weather-Dashboard</h3>
+                        </a>
+                        <a href="https://github.com/sbolotnikov/weather-dashboard" target="_blank">
+                            <p class="head1">Link to GitHub depository</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Portfolio/" alt="        ">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel"> </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./assets/images/Portfolio/" alt="    ">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel"> </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Portfolio/" alt="        ">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel"> </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Portfolio/" alt="        ">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel"> </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://sbolotnikov.github.io/Responsive-Portfolio/" target="_blank">
+                            <h3 class="head1">Responsive Portfolio</h3>
+                        </a>
+                        <a href="https://github.com/sbolotnikov/Responsive-Portfolio" target="_blank">
+                            <p class="head1">Link to GitHub depository</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="./assets/images/Calendar/4-click-to-edit-on description.png"
+                                        alt="Overall look">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">Overall App look. To Edit click the appointment bar
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./assets/images/Calendar/5-edit-apptmt-view.png"
+                                        alt="Edit/Add appointment view">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">Edit/Add appointment view </h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Calendar/6-click-to-erase.png"
+                                        alt="One click to erase">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel"> Click to erase button</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Calendar/7-erased.png"
+                                        alt="Erase result view">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">Erase result view</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://sbolotnikov.github.io/Day-planner/" target="_blank">
+                            <h3 class="head1">Day Planner</h3>
+                        </a>
+                        <a href="https://github.com/sbolotnikov/Day-planner" target="_blank">
+                            <p class="head1">Link to GitHub depository</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Quiz/1-start-panel.png"
+                                        alt="Start up panel">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">Start up panel</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100"
+                                        src="./assets/images/Quiz/3-example-of-the-response-to-user-input.png"
+                                        alt="Interraction on user input">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">App interract with customer on user's input</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="./assets/images/Quiz/5-display-of-the-stored-results.png"
+                                        alt="panel of results">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">Results are stored and sorted</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="./assets/images/Quiz/6-detailed-look-of-the-individual-results.png"
+                                        alt="Individual details of each test">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel"> Individual details of each test</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://sbolotnikov.github.io/Code-Quiz/" target="_blank">
+                            <h3 class="head1">Code Quiz</h3>
+                        </a>
+                        <a href="https://github.com/sbolotnikov/Code-Quiz" target="_blank">
+                            <p class="head1">Link to GitHub depository</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/Password/Prompts.png"
+                                        alt="serie of prompts">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel">series of prompts asked</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./assets/images/Password/result.png"
+                                        alt="provide result">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="portfolioLabel"> provide result</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://sbolotnikov.github.io/javascript-password-generator/" target="_blank">
+                            <h3 class="head1">Password Generator</h3>
+                        </a>
+                        <a href="https://github.com/sbolotnikov/javascript-password-generator" target="_blank">
+                            <p class="head1">Link to GitHub depository</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec1">
+                <!-- In order to create divider i make container and use bottom border -->
+                <figure id="HeaderContainer">
+                    <h2 class="head1">Contact</h2>
+                </figure>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextMessage">Message</label>
+                        <textarea class="form-control" id="exampleTextMessage" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                </form>
+            </section>
+
+
+
+            <aside id="aside1" class="follow-me">
+                <p id="labelLink">Social media:</p>
+                <a id="facebook" href="https://www.facebook.com/bolotnikov/" target="_blank" title="Follow on Facebook">
+                    <span>F</span>
+                </a>
+                <a id="github" href="https://github.com/sbolotnikov" target="_blank" title="Follow on GitHub">
+                    <span>G</span>
+                </a>
+                <a id="linkedin" href="https://www.linkedin.com/in/sergey-bolotnikov-10035617/" target="_blank"
+                    title="Connect on Linkedin">
+                    <span>in</span>
+                </a>
+
+            </aside>
+            <!-- Modals -->
+            <div class="modal fade" id="modal1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Resume</h2>
+                            <button type="button" id="closeBtn" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" id="inputEvent">
+                            <embed src="./assets/images/Sergey_Bolotnikov_FS_Resume.pdf" width="100%" height="500px"
+                                alt="pdf If you read it try to use google Chrome"
+                                pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="btn1Modal" class="close" data-dismiss="modal">Close</button>
+                            <a href="./assets/images/Sergey_Bolotnikov_FS_Resume.pdf" target="_blank" download><button
+                                    type="button" id="btn2Modal">Download</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+        <!-- <div class="fixed-bottom"> -->
+            <footer class="footerClass">
+                &copy; Sergey Bolotnikov
+            </footer>
+        <!-- </div> -->
     </div>
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/EasePack.min.js"></script>
 </body>
 
 </html>

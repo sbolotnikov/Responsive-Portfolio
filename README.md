@@ -1,58 +1,105 @@
-# Unit 02 CSS and Bootstrap Homework: cd
 
-Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 
+## Requirements
 
+* Updated portfolio featuring project 1 and two exemplary homework assignments. 
 
-## Directions
+* Update GitHub profile with pinned repositories featuring project 1 and two exemplary assignments. 
 
-First, you will use the Bootstrap CSS Framework to create a mobile responsive portfolio. How do you deliver this? Here are some guidelines:
+* Updated resume
 
-* Create the following files files: `index.html`, `portfolio.html` and `contact.html`.
-
-* Using Bootstrap, develop your portfolio site with the following items:
-
-   * A navbar
-
-   * A responsive layout
-
-   * Responsive images
-
-* The Bootstrap portfolio should minimize the use of media queries.
-
-* Screenshots are provided as a reference in the `Assets/Images` folder. Your app does not need to be _exactly_ like the images. Use Bootstrap to create a similar, responsive layout.
-
-### Hints
-
-* Use Bootstrap's grid system (containers, rows, and columns).
-
-* On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
-
-* Use an HTML validation service to ensure that each page has valid HTML.
-
-### Minimum Requirements
-
-* Functional, deployed application
-
-* GitHub repository with README describing the project
-
-* Navbar must be consistent on each page.
-
-* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
-
-* All links must work.
-
-* Must use semantic html.
-
-* Each page must have valid and correct HTML. (use a validation service)
-
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
-
-* Must properly utilize Bootstrap components and grid system.
+* Updated LinkedIn profile
 
 
-### Bonus
+## Grading
 
-* Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
+| Requirement      | Weight |
+|---               |---     |
+| Portoflio        | 40%    |
+| GitHub Profile   | 40%    |
+| Resume           | 10%    |
+| LinkedIn Profile | 10%    |
+
+
+## Instructions
+
+1. [Updated Portfolio](#updated-portfolio)
+2. [GitHub Profile](#updated-github-profile)
+3. [Updated Resume](#updated-resume)
+4. [Updated LinkedIn](#updated-linkedin)
+
+### Updated Portfolio
+
+Your updated site should have the following content:
+
+* Your name
+
+* Links to your GitHub profile & LinkedIn page as well as your email address and phone number
+
+* A link to a PDF of your resume
+
+* A list of projects. For each project, make sure you have the following:
+
+  * Project title
+
+  * Link to the deployed version
+
+  * Link to the GitHub repository
+
+  * Screenshot of the deployed application
+
+
+#### Design
+
+Unfortunately, this is where it gets a little bit subjective. Your site should look
+"polished." Here are a few guidelines on what that means:
+
+* Mobile-first design
+
+* Choose a color palette for your site so it doesn't just look like
+the default bootstrap theme or an unstyled HTML site.
+
+* Make sure the font size is large enough to read, and that the colors don't cause eye strain.
+
+
+### Updated GitHub Profile 
+
+* If you haven't yet, now is the time to update the following in your GitHub profile: 
+
+    * Profile picture
+
+    * Bio
+
+    * Location
+
+    * Email
+
+    * Link to your portfolio
+
+* Employers (and potential collaborators) _will_ look at your GitHub profile, so put your best face forward. 
+
+* Pin some repos that you want to highlight
+
+  * Navigate to [GitHub](https://github.com/) and go to your profile.
+
+  * Click "Customize your pins"
+
+  * Click the checkboxes for your project and 2-3 homework assignments that you would like to share
+
+  * Make sure each of these projects is deployed and add a link to the deployed project in their README files
+
+* Follow your classmates. They are the beginning of your professional network and being a developer is as much about being a part of the community as it is writing code. 
+
+
+### Updated Resume 
+
+Submit a clear, concise and compelling resume, tailored to the type of job you’re looking for.
+
+
+### Updated LinkedIn Profile 
+
+Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
+
+
 
 original images are in the folder:
 https://github.com/sbolotnikov/Responsive-Portfolio/tree/master/assets/images/originals

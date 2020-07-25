@@ -10,14 +10,6 @@
 * Updated LinkedIn profile
 
 
-## Grading
-
-| Requirement      | Weight |
-|---               |---     |
-| Portoflio        | 40%    |
-| GitHub Profile   | 40%    |
-| Resume           | 10%    |
-| LinkedIn Profile | 10%    |
 
 
 ## Instructions
@@ -100,13 +92,14 @@ Submit a clear, concise and compelling resume, tailored to the type of job youâ€
 Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
 
 
-
-original images are in the folder:
-https://github.com/sbolotnikov/Responsive-Portfolio/tree/master/assets/images/originals
+## Results
+[Portfolio presentation intro](./assets/images/Portfolio/animation.gif)
+[Portfolio section presentation](./assets/images/Portfolio/portfolio.gif)
 
 final website link :
 https://sbolotnikov.github.io/Responsive-Portfolio/
-
+github repo:
+https://github.com/sbolotnikov/Responsive-Portfolio
 
 
 Â© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

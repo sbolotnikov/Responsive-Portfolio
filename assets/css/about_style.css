@@ -24,9 +24,9 @@
   .follow-me
    {
     z-index: 1001;
-    float: inline-end;
     margin-top: 1rem;
-    margin-left: 15%;
+    margin-bottom: 2%;
+    margin-left: 2%;
   }
   .follow-me.a {
     display: flex;

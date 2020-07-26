@@ -21,21 +21,4 @@ function animateIndex() {
   gsap.from("#cloud", { duration: 2, x: 200, y: 200, opacity: 0, delay: 3, ease: "elastic" });
   gsap.from("#aside1", { duration: 1, opacity: 0, delay: 4, ease: "elastic" });
 }
-$('form1').submit(function (event) {
-  event.preventDefault();
-  // validate input before 
-  var nameInput = $("#exampleInputName").val();
-  var eMailInput = $("#exampleInputEmail1").val();
-  var textInput = $("#exampleTextMessage").val();
-  alert("haha")
-  alertCall("haha");
-  // if (textinput != "") {
-  //   $('#inputModal').foundation('close');
-  //   apiKey = textinput;
-  // }
-});
-function alertCall(textAlert) {
-  $("#alertText").text(textAlert);
-  $('#alertModal').modal('show');
-}
-$('#alertModal').modal('show');
+

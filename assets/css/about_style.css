@@ -21,6 +21,7 @@
     margin-right: 0;
     margin-bottom: 0;
   }
+
   .follow-me
    {
     z-index: 1001;
@@ -53,10 +54,14 @@
   {
     font-size: 1.5rem;
   }
-  #cloud
+  /* #cloud
   {
     margin-left: 1rem;
     margin-right: 1rem;
+  } */
+  .card-img-overlay
+  {
+    margin-bottom: 15%;
   }
   #labelLink
   {
@@ -93,9 +98,21 @@
   {
     font-size: 2.4rem;
   }
-  #cloud
+  /* #cloud
   {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  
+  } */
+  .card-img-overlay
+  {
+    margin-bottom: 10%;
   }
 } 
+@media (min-width: 1230px) 
+{
+  .card-img-overlay
+  {
+    margin-bottom: 20%;
+  }
+}

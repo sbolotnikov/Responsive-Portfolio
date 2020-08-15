@@ -38,24 +38,22 @@
   border-radius: 10px;
 }
 #facebook {
-  background-color: #4868ad;
-  color: white;
-  padding: 0.5rem;
+  background-color: transparent;
+  color: #4868ad;
+  padding: 0.1rem;
+  
 }
 #linkedin {
-  background-color: #0077ba;
-  color: white;
-  padding: 0.5rem;
+  background-color: transparent;
+  color: #0077ba;
+  padding: 0.1rem;
   
 }
 #github {
-  background-image: url("../images/gHub1.png");
-  height: 95px;
-  color:transparent;
-  padding: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+  background-color: transparent;
+  color: black;
+  padding: 0.1rem;
+  
 }
 
 #HeaderContainer

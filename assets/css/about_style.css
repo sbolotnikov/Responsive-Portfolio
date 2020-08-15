@@ -28,11 +28,13 @@
     margin-top: 1rem;
     margin-bottom: 2%;
     margin-left: 2%;
+    background-color: transparent;
   }
   .follow-me.a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
     /* transition: transform 425ms cubic-bezier(.05,.65,.18,1); */
 }
 #labelLink
@@ -40,6 +42,10 @@
     float: left;
     margin-right: 5rem;
 
+  }
+  .fab
+  {
+    font-size: 30px;
   }
   
 /* Medium devices (tablets, 720px and up) */
@@ -78,6 +84,7 @@
    height: 2.4rem;
   width:2.4rem; 
   margin-left:0.1rem;
+  background-color: transparent;
 }
   .follow-me.a
   {
@@ -90,6 +97,10 @@
     font-size: 40px;
     padding: 1rem;
 
+  }
+  .fab
+  {
+    font-size: 35px;
   }
 } 
 @media (min-width: 998px) 

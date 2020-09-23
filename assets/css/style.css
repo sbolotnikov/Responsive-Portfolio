@@ -216,10 +216,10 @@ h4.card-text
   width: 85%;
   background: white;
   border-radius: 5px;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
   display: block;
-  align-self: center;
+  align-self: flex-start;
 }
 .col-md-6
 {

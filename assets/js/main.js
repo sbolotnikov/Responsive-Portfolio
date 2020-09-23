@@ -22,3 +22,7 @@ function animateIndex() {
   gsap.from("#aside1", { duration: 1, opacity: 0, delay: 4, ease: "elastic" });
 }
 
+// function headerSpans(){
+//   $('.head1').
+
+// }

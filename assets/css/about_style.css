@@ -48,9 +48,25 @@
     font-size: 30px;
   }
   
+  .card.app {
+    display: block;
+    background: rgb(247, 243, 243);
+    border: white;
+    margin-bottom: 2rem;
+  
+  }
+
+  .card.app:nth-child(even) div.carousel.slide {
+    order: 2;
+  }
 /* Medium devices (tablets, 720px and up) */
 @media (min-width: 768px) 
 { 
+  .card.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 .img-wrapper
 {
   width: 50%;
@@ -60,6 +76,7 @@
   {
     font-size: 1.5rem;
   }
+  
   /* #cloud
   {
     margin-left: 1rem;

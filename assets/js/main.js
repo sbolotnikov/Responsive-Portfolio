@@ -1,4 +1,7 @@
-
+var fieldText = "";
+var char = 0;
+var textArray = [];
+var timer, field;
 $(document).ready(function () {
   animateIndex();
   // gsap.to(".profile", {duration:2, x=-300, borderRadius:"20%", ease:"elastic"})
@@ -14,6 +17,27 @@ $(document).ready(function () {
       clearInterval(timerInterval);
     }
   }, 60);
+  // console.log($(".head1.link").length);
+  // for(let j=0; j<$(".head1.link").length;j++) {
+  //   field = $(".head1.link:eq("+j+")");
+  //   console.log(field.html());
+  
+  //   fieldText = field.html();
+  //   console.log(fieldText);
+  //   textArray = fieldText.split("")
+  //   let htmlholder = "";
+  //   for (let i = 0; i < textArray.length; i++) {
+  //     htmlholder += "<span class='anime'>" + textArray[i] + "</span>";
+  //   }
+  //   field.html(htmlholder);
+  // };
+  // $("figure.description")
+  // .mouseenter(function() {
+  //   timer = setInterval(onTick(this), 50);
+  // })
+  // .mouseleave(function() {
+  //   $( this ).find( "span" ).text( "mouse leave" );
+  // });
 });
 function animateIndex() {
   gsap.from("#cardGreeting", { duration: 1, backgroundPosition: '-200px,0px', scale: 1.5, opacity: 0, ease: "power2.out" });
@@ -22,7 +46,3 @@ function animateIndex() {
   gsap.from("#aside1", { duration: 1, opacity: 0, delay: 4, ease: "elastic" });
 }
 
-// function headerSpans(){
-//   $('.head1').
-
-// }

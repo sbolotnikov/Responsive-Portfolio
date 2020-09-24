@@ -76,6 +76,7 @@
 {
   color:white;
   text-align: center;
+  text-decoration: none;
   vertical-align: middle;
   font-family: 'Times New Roman', Times, serif;
   background-color:#59aaa5;
@@ -106,6 +107,7 @@ nav
 .NavP
 {
   padding: 10px;
+
 }
 h4.card-text
 {
@@ -245,4 +247,26 @@ h4.card-text
     border-radius: 5px;
 
 
+  }
+
+  a.link {
+    position: relative;
+    display: block;
+    /* font-size: 2em;
+    font-weight: 800; */
+    color: royalblue;
+    overflow: hidden;
+    background: -webkit-gradient(linear, left top, right top, from(midnightblue), color-stop(50%, midnightblue), color-stop(50%, #59aaa5));
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, #59aaa5 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-transition: background-position 275ms ease;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+  }
+  a:hover {
+    background-position: 0 100%;
   }
